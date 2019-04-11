@@ -1,0 +1,426 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+/*header*/
+.navBox1{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	background: #f8f8f8;
+	border-bottom: 1px solid #e5e5e5;
+}
+.nav1 a,.cart a,.abox a{
+	color: #666;
+	padding: 0 20px;
+}
+.navBox1 a:hover{
+	color: #23A96F;
+}
+
+.navBox1 .nav1{
+	float: left;
+	margin-left: 68px;
+}
+.navBox1 .abox{
+	float: right;
+	position: relative;
+}
+.navBox1 .cart{
+	float: right;
+	margin-right: 80px;
+	margin-left: 20px;
+	/*line-height: 80px;*/
+	display: flex;
+	justify-content: space-around;
+}
+.navBox1 .cart .cartimg{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/icon.png);
+	background-position: -105px -4px;
+	margin-top: 7px;
+}
+.navBox1 .cart .car{
+	padding: 0 8px;
+
+}
+.carbox{
+	position: relative;
+}
+.carbox .ccc{
+	display: none;
+	position: absolute;
+    z-index: 50;
+    right: 0;
+    margin-top: -1px;
+    width: 390px;
+    height: 410px;
+    padding: 20px 30px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0 #ccc;
+}
+.carbox .ccc .sj{
+	position: absolute;
+    top: -10px;
+    left: 95%;
+    margin-left: -12px;
+    width: 22px;
+    height: 10px;
+    background: url(../img/icon.png);
+    background-position: -396px -500px;
+}
+.carbox .ccc .carimg{
+	display: block;
+	width: 100px;
+    height: 100px;
+    margin: 120px auto 30px auto;
+}
+.carcont{
+	text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #999;
+    margin-bottom: 120px;
+}
+.carbox:hover .ccc{
+	display: block;
+}
+#usercenter{
+	display: none;
+	width: 250px;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+#usercenter a{
+	padding: 0 15px;
+}
+.uname,.order{
+	position: relative;
+	float: left;
+}
+#usercenter .uname:hover .menu{
+	display: block;
+}
+#usercenter .order:hover .menu{
+	display: block;
+}
+.menu{
+	display: none;
+	position: absolute;
+    z-index: 50;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -75px;
+    width: 150px;
+    line-height: 40px;
+    border: 1px solid #e5e5e5;
+    padding: 12px 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0 #ccc;
+}
+.menu .sj{
+	position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -12px;
+    width: 22px;
+    height: 10px;
+    background: url(../img/icon.png);
+    background-position: -396px -500px;
+}
+.menu .xt{
+	display: block;
+	width: 108px;
+    height: 2px;
+    background-color: #e5e5e5;
+    margin: 12px auto;
+}
+.menu a{
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: #333;
+}
+.menu a b{
+	padding-left: 30px;
+    padding-bottom: 0px;
+    color: #eb6100;
+    font-weight: normal;
+}
+.menu a:hover{
+	background: #23A86F;
+	color: #fff;
+}
+.menu a:hover b{
+	color: #fff;
+}
+.navBox1 .cart .carNum{
+	display:block;
+	width: 31px;
+	height: 22px;
+	background: #FF9900;
+	text-align: center;
+	line-height: 22px;
+	border-radius: 12px;
+	color: #FFF9F4;
+	margin-top: 8px;
+}
+.navBox2{
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 1px solid #E5E5E5;
+	box-sizing: border-box;
+}
+.navBox2 .logo{
+	height: 45px;
+	display: block;
+	float: left;
+    margin-left: 90px;
+    padding: 17px 0;
+}
+.navBox2 .nav{
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	float: right;
+	margin-right: 80px;
+}
+.navBox2 .nav a{
+	display: block;
+	line-height: 80px;
+	font-size: 16px;
+	color: #333;
+	padding: 0 30px;
+}
+.navBox2 .nav a:hover{
+	color: #23A96F;
+	border-bottom: 2px solid #23A96F;
+}
+/*section*/
+.product{
+	width: 1180px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.product-img{
+	float: left;
+    width: 400px;
+    height: 478px;
+    margin-top: 60px;
+}
+.bigimg img{
+	display: block;
+	width: 400px;
+	height: 400px;
+	box-sizing: border-box;
+}
+.smallimg{
+	width: 400px;
+	height: 58px;
+	padding: 0;
+	margin-top: 20px;
+	/*overflow: hidden;*/
+	position: relative;
+}
+.smallimg .l-img{
+	display: block;
+	width: 28px;
+	height: 60px;
+	background-image: url(../img/icon.png);
+	background-position: 0px -700px;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+.smallimg .r-img{
+	display: block;
+	width: 28px;
+	height: 60px;
+	background-image: url(../img/icon.png);
+	background-position: -600px -600px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.smallimg .imglist{
+	height: 58px;
+	position: absolute;
+	left: 32.5px;
+	top: 0;
+	overflow: hidden;
+}
+.smallimg .imglist li{
+	float: left;
+	width: 67px;
+	text-align: center;
+	display: list-item;
+}
+.smallimg .imglist li img{
+	width: 58px;
+	height: 58px;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all .2s linear;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+.product-details{
+	float: right;
+	width: 740px;
+    padding-left: 40px;
+    margin-top: 60px;
+}
+.details-title{
+	border-bottom: 1px solid #e5e5e5;
+}
+.details-title h1{
+	height: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	color: #666;
+	white-space: nowrap;
+	word-wrap: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: normal;
+}
+.details-title p{
+	padding-bottom: 8px;
+	line-height: 24px;
+	color: #999
+}
+.price{
+	height: 36px;
+	line-height: 36px;
+	margin-top: 24px;
+}
+.price span{
+	display: inline-block;
+	width: 74px;
+	color: #666;
+	vertical-align: middle;
+}
+.price strong{
+	font-size: 24px;
+	color: #FF9900;
+	vertical-align: middle;
+	font-weight: normal;
+}
+.details{
+	margin-top: 10px;
+}
+.details li{
+	padding: 6px 0 6px 78px;
+	position: relative;
+	color: #333;
+	font-size: 14px;
+}
+.details li span{
+	line-height: 50px;
+	color: #666;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.details li a{
+	height: 30px;
+	display: inline-block;
+	line-height: 26px;
+	border: 2px solid #23a96f;
+	padding: 0 11px;
+	margin: 4px 12px 4px 0;
+	text-align: center;
+	background: #fff;
+	box-sizing: border-box;
+}
+.action{
+	margin-top: 10px;
+} 
+.action .buy{
+	margin: 10px 10px 10px 0;
+	width: 110px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	background: #ff9900;
+	display: inline-block;
+	padding: 0 20px;
+	border-radius: 2px;
+	text-align: center;
+	color: #fff;
+}
+.action .buy:hover{
+	background-color: #f6bc64;
+}
+.pointer{
+	padding-left: 2em;
+	text-indent: -2em;
+	color: #999;
+	font-size: 14px;
+}
+/*product-ad*/
+.product-ad{
+	width: 100%;
+	height: 100px;
+	background: #f7f7f7;
+	margin-top: 60px;
+}
+.product-ad .ad{
+	width: 1180px;
+	margin: 0 auto;
+}
+.product-ad .ad li{
+	width: 25%;
+	height: 50px;
+	float: left;
+	padding: 25px 0;
+	line-height: 50px;
+	text-align: center;
+}
+.product-ad .ad li span{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	background-image: url(../img/icon.png);
+}
+.test span{
+	background-position: 0 -500px;
+}
+.quality span{
+	background-position: -100px -500px;
+}
+.clear span{
+	background-position: -200px -500px;
+}
+.express span{
+	background-position: -300px -500px;
+}
+.product-ad .ad li p{
+	display: inline-block;
+	height: 50px;
+	line-height: 25px;
+	font-size: 16px;
+	color: #999;
+	text-align: left;
+	margin-left: 30px;
+	vertical-align: middle;
+}
